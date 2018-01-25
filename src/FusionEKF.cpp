@@ -142,10 +142,14 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
     cout << "update with RADAR data" << endl;
 
     // Radar updates
-    ekf_.R_ = R_radar_;
-    Hj_ = tools.CalculateJacobian(ekf_.x_);
-    ekf_.H_ = Hj_;
-    ekf_.UpdateEKF(measurement_pack.raw_measurements_);
+    try {
+      ekf_.R_ = R_radar_;
+      Hj_ = tools.CalculateJacobian(ekf_.x_);
+      ekf_.H_ = Hj_;
+      ekf_.UpdateEKF(measurement_pack.raw_measurements_);
+    } catch (string str_error) {
+      cout << str_error << endl;
+    }
   } else {
     cout << "update with LIDAR data" << endl;
 
