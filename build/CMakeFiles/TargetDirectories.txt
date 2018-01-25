@@ -1,3 +1,0 @@
-/Users/DerekHu/git/self-driving-car/Udacity-CarND-T2-P1-ExtendedKalmanFilters/build/CMakeFiles/rebuild_cache.dir
-/Users/DerekHu/git/self-driving-car/Udacity-CarND-T2-P1-ExtendedKalmanFilters/build/CMakeFiles/edit_cache.dir
-/Users/DerekHu/git/self-driving-car/Udacity-CarND-T2-P1-ExtendedKalmanFilters/build/CMakeFiles/ExtendedKF.dir
