@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "__locale": "cpp",
+        "ios": "cpp",
+        "geometry": "cpp",
+        "core": "cpp"
+    }
+}
